@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(22, 22, 24);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-board {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.score-board h1 {
+  color: rgb(201, 166, 74);
+  font-size: 2rem;
+}
+
+.game-container {
+  position: absolute;
+  display: flex;
+}
+
+.game-area {
+  background-color: rgb(168, 168, 168);
+  height: 700px;
+  width: 700px;
+  border-radius: 25px;
+  border: 10px solid rgb(201, 166, 74);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pyramid-eye {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  border: 300px solid transparent;
+  border-top: 0;
+  border-bottom: 600px solid rgb(0, 0, 0);
+}
+
+.pyramid-eye .eye {
+  background-color: rgb(201, 166, 74);
+  width: 250px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.pyramid-eye .pupil {
+  background-color: rgb(105, 57, 57);
+  border: 8px solid rgb(114, 0, 0);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
